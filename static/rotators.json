@@ -1,0 +1,18 @@
+[
+	{
+		"rotator_id": "homepage_intro",
+		"items": [
+			{"id": 1, "title": "Homepage intro 1", "main_image": "https://picsum.photos/id/236/1920/650"},
+			{"id": 2, "title": "Homepage intro 2", "main_image": "https://picsum.photos/id/237/1920/650"}
+		]
+	},
+	{
+		"rotator_id": "promo_zones",
+		"items": [
+			{"id": 3, "title": "Promo zone 1", "main_image": "https://picsum.photos/id/238/400/400", "link": "/", "content": "<p>Lorem ispum dolor sit amet!</p>"},
+			{"id": 4, "title": "Promo zone 2", "main_image": "https://picsum.photos/id/239/400/400", "link": "/cms", "content": ""},
+			{"id": 5, "title": "Promo zone 3", "main_image": "https://picsum.photos/id/240/400/400", "link": "", "content": "<p>Lorem ispum dolor sit</p>"},
+			{"id": 6, "title": "Promo zone 4", "main_image": "https://picsum.photos/id/241/400/400", "link": "/o-nama", "content": "<p>Lorem ispum</p>"}
+		]
+	}
+]

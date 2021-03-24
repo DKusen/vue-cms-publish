@@ -1,0 +1,10 @@
+[
+	{
+		"identifier": "blog_widget_title",
+		"content": "<h2>Blog</h2><p>Lorem ipsum dolor sit</p>"
+	},
+	{
+		"identifier": "blog_widget_background",
+		"content": "https://picsum.photos/id/242/1920/800"
+	}
+]
