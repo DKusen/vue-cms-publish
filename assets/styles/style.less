@@ -262,7 +262,7 @@ input[type=radio]:checked + label:before{background: #000; box-shadow: inset 0px
 /*------- /slick -------*/
 
 /*------- header -------*/
-.header{position: fixed; top: 0; right: 0; left: 0; height: 90px; border-bottom: 1px solid @borderColor; background: @white; z-index: 1;}
+.header{position: fixed; top: 0; right: 0; left: 0; height: 90px; border-bottom: 1px solid @borderColor; background: @white; z-index: 10;}
 .header-placeholder{position: relative; display: block; height: 90px;}
 .header-wrapper{position: relative; display: flex; align-items: center; height: 100%;}
 .logo{position: relative; display: block; width: 140px; height: 45px; margin-right: 45px; flex-grow: 0; flex-shrink: 0; background: url('~assets/images/logo.jpg') center no-repeat;}
@@ -279,7 +279,10 @@ input[type=radio]:checked + label:before{background: #000; box-shadow: inset 0px
 		display: block; margin: 0 10px;
 		&:first-child{margin-left: 0;}
 		&:last-child{margin-right: 0;}
-		&>a{display: block;}
+		&>a{
+			display: block;
+			&.nuxt-link-exact-active{color: @orange;}	
+		}
 	}
 
 }
@@ -329,8 +332,47 @@ input[type=radio]:checked + label:before{background: #000; box-shadow: inset 0px
 }
 .bw-wrapper{position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; z-index: 1;}
 .bw-header{
-	display: block; width: 100%; margin-bottom: 15px; color: @white; text-align: center; font-size: 20px; font-weight: 100;
+	display: block; width: 100%; margin-bottom: 25px; color: @white; text-align: center; font-size: 20px; font-weight: 100;
 	h2{font-size: 34px; line-height: 1.2; padding: 0 0 5px;}
 	p{padding-bottom: 0;}
 }
+.bw-items{position: relative; display: flex;}
 /*------- /blog widget -------*/
+
+/*------- title container -------*/
+.title-container{
+	position: relative; display: block; width: 100%; height: auto; padding: 80px 0; background: @orange; background-position: center; background-repeat: no-repeat;
+	h1{display: block; font-size: 40px; line-height: 1.2; text-align: center; padding: 0; color: @white;}
+}
+/*------- /title container -------*/
+
+/*------- main -------*/
+.main{position: relative; display: block; padding: 50px 0 150px;}
+.cms-main{
+	.wrapper{display: flex;}
+}
+.sidebar{width: 250px; flex-grow: 0; flex-shrink: 0;}
+.sidebar-nav{
+	display: block; padding: 0; margin: 0; list-style: none;
+	li{display: block; padding: 0 0 10px;}
+	a.nuxt-link-exact-active{color: @orange;}
+}
+.content-layout{display: block; width: 100%;}
+.content{display: block; width: 740px;}
+/*------- /main -------*/
+
+/*------- publish post -------*/
+.pp{
+	position: relative; display: block; width: calc(~"25% - 10px"); margin: 0 15px 15px 0;
+	&:nth-child(4n){margin-right: 0;}	
+}
+.pp-image{
+	display: block; width: 100%;
+	img{display: block; width: auto; height: auto; max-width: 100%;}
+}
+.pp-cnt{
+	position: relative; display: block; padding: 15px 15px 0; color: @white; text-align: center;
+	p{padding-bottom: 0;}	
+}
+.pp-title{display: block; font-size: 20px; line-height: 1.2; padding: 0 0 5px;}
+/*------- /publish post -------*/

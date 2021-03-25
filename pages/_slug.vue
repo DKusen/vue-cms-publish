@@ -1,5 +1,13 @@
 <template>
-	
+	<div>
+		<TitleContainer compclass="cms-title-container" :h1="pageTitle" :mainImage="pageImage" />
+		<app-main compclass="cms-main">
+			<AppSidebar menu="sidebar" />
+			<div class="content-layout">
+				<div class="content" v-interpolation v-html="item.content"></div>
+			</div>	
+		</app-main>
+	</div>
 </template>
 
 <script>
@@ -7,7 +15,9 @@
 	export default {
 		data() {
 			return {
-				item: this.$store.state.page
+				item: this.$store.state.page,
+				pageTitle: this.$store.state.page.seo_title,
+				pageImage: this.$store.state.page.main_image
 			}
 		},
 		middleware: 'layout',
@@ -30,6 +40,8 @@
 					}
 				]
 			}
+		},
+		mounted(){
 		},
 		mixins: [global]
 	}

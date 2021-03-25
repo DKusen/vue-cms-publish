@@ -5,18 +5,18 @@
 			{"id": 1, "title": "Početna", "url": "/"},
 			{"id": 2, "title": "Cms", "url": "/cms"},
 			{"id": 3, "title": "O nama", "url": "/o-nama"},
-			{"id": 4, "title": "Kontakt", "url": "/kontakt"},
-			{"id": 5, "title": "Blog", "url": "/blog"}
+			{"id": 4, "title": "Kontakt", "url": "/kontakt", "layout": "contact"},
+			{"id": 5, "title": "Česta pitanja", "url": "/cesta-pitanja"},
+			{"id": 6, "title": "Blog", "url": "/blog"}
 		]
 	},
 	{
 		"menu": "sidebar",
 		"items": [
-			{"id": 1, "title": "Početna", "url": "/"},
-			{"id": 2, "title": "Cms", "url": "/cms"},
-			{"id": 3, "title": "O nama", "url": "/o-nama"},
-			{"id": 4, "title": "Kontakt", "url": "/kontakt"},
-			{"id": 5, "title": "Blog", "url": "/blog"}
+			{"id": 1, "title": "S Početna", "url": "/"},
+			{"id": 2, "title": "S Cms", "url": "/cms"},
+			{"id": 3, "title": "S O nama", "url": "/o-nama"},
+			{"id": 4, "title": "S Kontakt", "url": "/kontakt"}
 		]
 	},
 	{
